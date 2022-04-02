@@ -9,6 +9,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
+    <script src="https://apis.google.com/js/platform.js"></script>
 
 
 </head>
