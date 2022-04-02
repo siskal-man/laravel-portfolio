@@ -534,6 +534,12 @@ body{
 .-bottom-8{
   bottom: -2rem;
 }
+.-right-7{
+  right: -1.75rem;
+}
+.-bottom-7{
+  bottom: -1.75rem;
+}
 .z-50{
   z-index: 50;
 }
@@ -550,6 +556,14 @@ body{
 .my-\[6px\]{
   margin-top: 6px;
   margin-bottom: 6px;
+}
+.-mx-3{
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .ml-0{
   margin-left: 0px;
@@ -571,6 +585,12 @@ body{
 }
 .ml-2{
   margin-left: 0.5rem;
+}
+.mt-10{
+  margin-top: 2.5rem;
+}
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 .block{
   display: block;
@@ -633,6 +653,9 @@ body{
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .flex-wrap{
   flex-wrap: wrap;
 }
@@ -648,6 +671,9 @@ body{
 .justify-between{
   justify-content: space-between;
 }
+.overflow-hidden{
+  overflow: hidden;
+}
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -660,11 +686,17 @@ body{
 .rounded-md{
   border-radius: 0.375rem;
 }
+.rounded-2xl{
+  border-radius: 1rem;
+}
 .border{
   border-width: 1px;
 }
 .border-2{
   border-width: 2px;
+}
+.border-l-4{
+  border-left-width: 4px;
 }
 .border-\[\#E5E5E5\]{
   --tw-border-opacity: 1;
@@ -685,6 +717,10 @@ body{
 .border-primary{
   --tw-border-opacity: 1;
   border-color: rgb(12 113 135 / var(--tw-border-opacity));
+}
+.border-amber-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(245 158 11 / var(--tw-border-opacity));
 }
 .bg-white{
   --tw-bg-opacity: 1;
@@ -749,6 +785,10 @@ body{
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
 .pr-4{
   padding-right: 1rem;
 }
@@ -767,6 +807,12 @@ body{
 .pt-11{
   padding-top: 2.75rem;
 }
+.pt-20{
+  padding-top: 5rem;
+}
+.pb-12{
+  padding-bottom: 3rem;
+}
 .text-xl{
   font-size: 1.5rem;
 }
@@ -779,6 +825,15 @@ body{
 .text-base{
   font-size: 1.125rem;
 }
+.text-lg{
+  font-size: 1.25rem;
+}
+.text-sm{
+  font-size: 1rem;
+}
+.text-3xl{
+  font-size: 2.25rem;
+}
 .font-bold{
   font-weight: 700;
 }
@@ -787,6 +842,12 @@ body{
 }
 .font-normal{
   font-weight: 400;
+}
+.font-semibold{
+  font-weight: 600;
+}
+.italic{
+  font-style: italic;
 }
 .leading-normal{
   line-height: 1.5;
@@ -821,6 +882,14 @@ body{
 .text-body-color{
   --tw-text-opacity: 1;
   color: rgb(99 115 129 / var(--tw-text-opacity));
+}
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.text-amber-500{
+  --tw-text-opacity: 1;
+  color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 .no-underline{
   -webkit-text-decoration-line: none;
@@ -1113,6 +1182,11 @@ input#checkboxLabelFive:checked~.box{
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .dark .hover\:dark\:border-primary:hover{
   --tw-border-opacity: 1;
   border-color: rgb(12 113 135 / var(--tw-border-opacity));
@@ -1120,12 +1194,31 @@ input#checkboxLabelFive:checked~.box{
 
 @media (min-width: 540px){
 
+  .sm\:-mx-4{
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
   .sm\:mr-4{
     margin-right: 1rem;
   }
 
+  .sm\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sm\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .sm\:text-\[42px\]{
     font-size: 42px;
+  }
+
+  .sm\:text-4xl{
+    font-size: 3rem;
   }
 }
 
@@ -1161,6 +1254,10 @@ input#checkboxLabelFive:checked~.box{
 
   .lg\:ml-auto{
     margin-left: auto;
+  }
+
+  .lg\:mt-0{
+    margin-top: 0px;
   }
 
   .lg\:block{
@@ -1199,6 +1296,10 @@ input#checkboxLabelFive:checked~.box{
     width: 50%;
   }
 
+  .lg\:w-1\/2{
+    width: 50%;
+  }
+
   .lg\:max-w-full{
     max-width: 100%;
   }
@@ -1223,6 +1324,14 @@ input#checkboxLabelFive:checked~.box{
 
   .lg\:pt-0{
     padding-top: 0px;
+  }
+
+  .lg\:pt-\[120px\]{
+    padding-top: 120px;
+  }
+
+  .lg\:pb-\[90px\]{
+    padding-bottom: 90px;
   }
 
   .lg\:text-right{
@@ -1252,6 +1361,14 @@ input#checkboxLabelFive:checked~.box{
 
   .xl\:mr-4{
     margin-right: 1rem;
+  }
+
+  .xl\:w-1\/2{
+    width: 50%;
+  }
+
+  .xl\:w-5\/12{
+    width: 41.666667%;
   }
 
   .xl\:px-9{
