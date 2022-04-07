@@ -47,7 +47,7 @@
               formData: {
                 name: '',
                 email: '',
-                message: '',
+                body: '',
               },
               errors: {},
               successMessage: '',
@@ -74,7 +74,7 @@
                     this.formData = {
                       name: '',
                       email: '',
-                      message: '',
+                      body: '',
                     };
                     this.successMessage = 'Thanks for your contact request. I will get back to you shortly.';
                   })
@@ -105,9 +105,9 @@
                             </template>
                         </div>
                         <div class="mb-6">
-                            <x-forms.textarea placeholder="Your Message" name="message" rows="6" x-model="formData.message" ::class="errors.message ? 'border-red-500 focus:border-red-500' : ''"></x-forms.textarea>
-                            <template x-if="errors.message">
-                                <div x-text="errors.message[0]" class="text-red-500"></div>
+                            <x-forms.textarea placeholder="Your Message" name="body" rows="6" x-model="formData.body" ::class="errors.body ? 'border-red-500 focus:border-red-500' : ''"></x-forms.textarea>
+                            <template x-if="errors.body">
+                                <div x-text="errors.body[0]" class="text-red-500"></div>
                             </template>
                         </div>
                         <div>

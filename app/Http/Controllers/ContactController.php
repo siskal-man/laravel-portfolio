@@ -13,14 +13,11 @@ class ContactController extends Controller
         $validated = $request->validate([
             'name' => 'required',
             'email' => ['required', 'email'],
-            'message' => 'required'
+            'body' => 'required'
         ]);
 
-        // Mail::to('block-code@mail.ru')
-        //     ->send(new ContactMail($validated['name'], $validated['email'], $validated['message']));
+        Mail::to('block-code@mail.ru')->send(new ContactMail($validated['name'], $validated['email'], $validated['body']));
 
-        // return $request->all();
-
-        return ["successMessage" => "succes"];
+        return $request->all();
     }
 }
